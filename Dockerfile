@@ -3,7 +3,7 @@ FROM ruby:2.3-alpine
 RUN apk update && \
     apk add make gcc g++ nodejs
 
-RUN gem install bundler dashing
+RUN gem install bundler smashing
 RUN dashing new dashboard
 
 VOLUME ["/dashboard"]
